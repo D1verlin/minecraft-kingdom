@@ -43,7 +43,10 @@ main {
 }
 
 .info-description {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wp6005719.webp);
     font-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.05em;
@@ -64,12 +67,19 @@ main {
 .info-description a {
     display: contents;
     color: var(--link-color);
+    transition: 0.3s;
+}
+
+.info-description a:hover {
+	text-decoration: underline;
 }
 
 .server-info {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/SDs.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 15px;
     border: var(--block-border);
-    background: var(--block-color);
     border-radius: 10px;
     font-weight: bold;
     font-size: 18px;
@@ -102,14 +112,8 @@ main {
 		margin-top: 30px;
 	    flex-direction: column;
 	}
-
-	.left-column {
-		display: flex;
-	    flex-direction: column;
-	    align-items: stretch;
-	}
-	.col-elem {
-		width: auto;
+	.info-container {
+		flex-direction: column;
 	}
 }
 
