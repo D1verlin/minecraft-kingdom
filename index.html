@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Kingdom</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" type="text/css" href="Font/GeometriaFont.css">
+</head>
+<body>
+        <div class="preloader">
+  <div class="preloader__row">
+  </div>
+</div>
+    <header>
+        <div class="menu">
+        <nav class="m-elem"><a id="m-active">Главная</a></nav>
+        <nav class="m-elem"><a href="guides/main.html">О сервере</a></nav>
+        <nav class="m-elem"><a href="rules/chapter1.html">Правила</a></nav>
+        </div>
+        <a class="request" href="https://forms.gle/JpFVUY8Eqt8Lud9P7">Подать заявку</a>
+    </header>
+    <main>
+        <div class="container">
+        <h1>Minecraft Kingdom</h1>
+        <p>Minecraft сервер на 1.17</p>
+        <div class="group-buttons">
+            <a href="https://discord.gg/RsezkYNRNb" id="Discord"><span class="iconify" data-icon="bi:discord" data-inline="false"></span>Discord</a>
+            <a href="guides/main.html" id="btn"><span class="iconify" data-icon="akar-icons:circle-chevron-down-fill" data-inline="false"></span>Подробнее</a>
+        </div>
+        </div>
+    </main>
+    <script>
+            window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+    </script>
+</body>
+</html>

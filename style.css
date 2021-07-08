@@ -1,0 +1,195 @@
+:root {
+	--text-h1-color: #fff;
+	--text-p-color: #D4D4D4;
+	--block-color: #151514;
+	--block-border: 1px solid rgba(255, 255, 255, 0.3);
+	--discord-color: #38364C;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+ body {
+	padding: 30px;
+	font-family: 'Geometria', sans-serif;
+	background: url(img/bg.png);
+	background-repeat: no-repeat;
+    background-position: center 0;
+    
+}
+
+
+main {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 30em;
+    text-align: center;
+}
+
+ main .container {
+	display: flex;
+	flex-direction: column;
+}
+
+ main h1 {
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 81px;
+	letter-spacing: 0.03em;
+	color: var(--text-h1-color);
+}
+
+ main p {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 45px;
+	color: var(--text-p-color);
+}
+
+.group-buttons {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.group-buttons svg {
+	width: 32px;
+	height: 32px;
+}
+
+#Discord {
+	padding: 13px;
+	background: var(--discord-color);
+	border: var(--block-border);
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 100%;
+	letter-spacing: 0.03em;
+	color: var(--text-nav-default-color);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	transition: 0.3s;
+}
+
+#Discord:hover {
+	color: var( --text-nav-active-color );
+	transform: scale(0.96);
+}
+
+
+
+#btn {
+	padding: 13px;
+	background: var(--block-color);
+	border: var(--block-border);
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 100%;
+	letter-spacing: 0.03em;
+	color: var(--text-nav-default-color);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transition: 0.3s;
+}
+
+#btn:hover {
+	color: var( --text-nav-active-color );
+	transform: scale(0.96);
+}
+
+
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 15px;
+	}
+
+	header {
+		display: flex;
+	    flex-direction: column;
+	    align-items: stretch;
+	    align-content: center;
+	    justify-content: space-between;
+	    gap: 15px;
+	}
+
+	header .menu {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.m-elem {
+    padding: 10px;
+}
+
+.m-elem a {
+    font-size: 17px;
+}
+
+.request {
+	padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+
+main h1 {
+    font-size: 32px;
+    line-height: normal;
+}
+
+main p {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.group-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+#Discord {
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+#btn {
+    display: flex;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+
+
+}

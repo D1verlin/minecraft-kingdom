@@ -1,0 +1,354 @@
+:root {
+	--bg: #151515;
+	--primary-color:#FEC685;
+	--block-color: #151514;
+	--description: #D4D4D4;
+	--link-color: #82D38A;
+	--warning-color: #C76E6E;
+	--External-color: #AED993;
+	--Medium-color: #97C1FF;
+	--Central-color: #FFEE94;
+	--block-header: #FFF;
+	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body {
+	padding: 30px;
+	font-family: 'Geometria', sans-serif;
+	background: var(--bg);
+}
+
+.menu {
+	display: flex;
+}
+
+.rules-blocks {
+	padding-top: 20px;
+	display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.rules-block {
+	border-radius: 10px;
+	border: var(--block-border);
+	padding: 15px;
+	background: var(--block-color);
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.rules-block h1 {
+	color: var(--block-header);
+	font-weight: bold;
+	font-size: 22px;
+	letter-spacing: 0.05em;
+}
+
+.rules-block p {
+	display: contents;
+}
+
+.rules-block p,span {
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--description);
+
+}
+
+#b-one { background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/block-one.png); }
+
+.block-min {
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+#warning {
+	background: linear-gradient(159.43deg, rgba(199, 110, 110, 0.2) 12.41%, rgba(0, 0, 0, 0.2) 125.84%), #151414;
+	border: 1px solid rgba(199, 110, 110, 0.3);
+	max-width: 480px;
+}
+
+#warning h1 {
+	color: var(--warning-color);
+}
+
+.block-min span {
+	color: var(--description);
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.block-min a {
+	color: var(--link-color);
+	cursor: pointer;
+}
+
+.block-min a:hover { text-decoration: underline; }
+
+#kingdom-rule li {
+	list-style-type: none;
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--description);
+}
+
+#kingdom-rule {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wp6005703.webp);
+	border: var(--block-border);
+	background-repeat: no-repeat;
+    background-position: center 0;
+    max-width: 500px;
+}
+
+.Rings {
+	display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 15px;
+}
+
+
+
+.rings-col {
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.rb-center {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.ring-header {
+	border: var(--block-border);
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+div#external-ring div.ring-header  {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/block-one.png);
+}
+
+div#medium-ring div.ring-header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/Marble_Castle_using_texturepack.png);
+	background-repeat: no-repeat;
+    background-position: right;
+}
+
+div#central-ring div.ring-header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/wp6005820.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#external-ring div.ring-header h1 {
+	color: var(--External-color);
+}
+
+div#medium-ring div.ring-header h1 {
+	color: var(--Medium-color);
+}
+
+div#central-ring div.ring-header h1 {
+	color: var(--Central-color);
+}
+
+.ring-ProfiList {
+	padding: 15px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wp6005719.webp);
+	border-radius: 10px;
+	border: var(--block-border);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+	background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+.ring-ProfiList h1 {
+	font-weight: 500;
+	font-size: 21px;
+	text-align: center;
+	width: -webkit-fill-available;
+}
+
+.ring-ProfiList li,a {
+	list-style: none;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	color: var(--description);
+	
+}
+
+
+div.ring-ProfiList div.list {
+	width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ring-ProfiList #detail {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+div#external-ring div.ring-ProfiList a#detail:hover {
+	color: var(--External-color);
+	gap: 7px;
+}
+
+div#medium-ring div.ring-ProfiList a#detail:hover {
+	color: var(--Medium-color);
+	gap: 7px;
+}
+
+.ring-RpRules {
+	padding: 15px;
+	border: var(--block-border);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wp3704359.jpg);
+}
+
+.ring-RpRules li {
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--description);
+	list-style: none;
+}
+
+.ring-RpRules h2 {
+	font-size: 19px;
+	font-weight: 500;
+	color: var(--block-header);
+}
+
+.Feedback {
+	border: var(--block-border);
+	border-radius: 10px;
+	padding: 20px;
+background: linear-gradient(143.69deg, rgba(100, 131, 159, 0.2) -7.95%, rgba(0, 0, 0, 0.2) 90.18%),
+linear-gradient(0deg, #151514, #151514);
+
+}
+
+.Feedback h1 {
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--block-header);
+}
+
+.Feedback a {
+	cursor: pointer;
+	color: var(--link-color);
+}
+
+.Feedback a:hover { text-decoration: underline; }
+
+.rules2-blocks {
+	padding-top: 20px;
+	display: grid;
+	grid-template-areas: 
+	"TOP TOP"
+	"D_LEFT D_RIGHT"
+	"D_DOWN D_DOWN";
+	grid-gap: 10px;
+}
+
+.rules-block li {
+	color: var(--description);
+	list-style: none;
+	letter-spacing: 0.02em;
+}
+
+.rules-block h2 {
+	color: var(--block-header);
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+}
+
+#Block_One {
+	grid-area: TOP;
+	background: url(../img/bg.png);
+	background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#Block_Two {
+	grid-area: D_LEFT;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wp3704359.jpg);
+}
+
+#Block_Three {
+	grid-area: D_RIGHT;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wp6005719.webp);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 15px;
+	}
+
+	.request {
+		margin-bottom: 10px;
+	}
+
+	.Rings {
+		flex-direction: column;
+	}
+
+	.Feedback h1,a {
+		font-size: 16px;
+	}
+
+	.rules2-blocks {
+	grid-template-areas: 
+	"TOP"
+	"D_LEFT"
+	"D_RIGHT"
+	"D_DOWN";
+}
+
+}
