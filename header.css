@@ -4,6 +4,7 @@
 	--button-nav-default-color: #323540;
 	--button-nav-hover-color: #666D88;
 	--block-border: 1px solid rgb(64 64 64);
+	--link-color: #82D38A;
 
 }
 
@@ -129,6 +130,33 @@
 .request:hover {
 	color: var( --text-nav-active-color );
 	background: var(--button-nav-hover-color);
+}
+
+footer {
+	opacity: 0%;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 10px;
+    right: 30px;
+    left: 30px;
+    align-items: center;
+    position: absolute;
+    color: var(--description);
+    transition: 0.3s;
+}
+
+footer:hover {
+	opacity: 100%;
+}
+
+footer a {
+	color: var(--link-color);
+	transition: 0.3s;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
