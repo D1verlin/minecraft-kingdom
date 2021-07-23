@@ -10,6 +10,8 @@ linear-gradient(0deg, #151514, #151514);
 	--card-height: 100px;
 	--serverlist-color: #D4AF82;
 	--discord-color: #38364C;
+	--discord-color-hover:#7D78A9;
+	--discord-border-color:1px solid #38364C;
 	--White: #FFF;
 }
 
@@ -24,7 +26,10 @@ a {
 	color: #fff;
 }
 
-
+#myInput {
+  position: absolute;
+  top: -999999px;
+}
 
  body {
 	padding: 30px;
@@ -147,7 +152,7 @@ main {
 
 .text-block p {
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 22px;
 	color: var(--description);
 }
 
@@ -184,9 +189,37 @@ main {
 }
 
 #Discord:hover {
-	background: #7D78A9;
+	background: var(--discord-color-hover);
+	border: var(--discord-border-color);
 	
 }
+
+div.Name-container div.text-block a {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: var(--link-color);
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px;
+    background: var(--block-color);
+    border: var(--block-border);
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+div.Name-container div.text-block a:hover {
+	background: #82d38a29;
+}
+
+#copy-check {
+	display: none;
+	animation: 1s linear 0.5s move_eye;
+}
+
+@keyframes move_eye { from { opacity: 100%; } to { opacity:0%; }  }
 
 @media screen and (max-width: 768px) {
 	body {
@@ -222,6 +255,10 @@ main {
 
 	footer {
 		display: none;
+	}
+
+	div.Name-container div.text-block a {
+		font-size: 20px;
 	}
 
 }

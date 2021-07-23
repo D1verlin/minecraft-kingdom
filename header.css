@@ -4,6 +4,7 @@
 	--button-nav-default-color: #323540;
 	--button-nav-hover-color: #666D88;
 	--block-border: 1px solid rgb(64 64 64);
+	--block-border-hover: 1px solid #666D88;
 	--link-color: #82D38A;
 
 }
@@ -130,6 +131,7 @@
 .request:hover {
 	color: var( --text-nav-active-color );
 	background: var(--button-nav-hover-color);
+	border: var(--block-border-hover);
 }
 
 footer {

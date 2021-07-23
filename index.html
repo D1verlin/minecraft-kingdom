@@ -24,6 +24,7 @@
   <div class="preloader__row">
   </div>
 </div>
+<input type="text" value="m24.joinserver.ru:25938" id="myInput">
     <header>
         <div class="menu">
         <nav class="m-elem"><a id="m-active">Главная</a></nav>
@@ -37,7 +38,8 @@
         <div class="Name-container">
            <div class="text-block">
                <h1>Minecraft Kingdom</h1>
-               <p>Приватный Minecraft сервер</p>
+               <p>Приватный Minecraft сервер на Java Edition</p>
+               <a onclick="CopyText()">m24.joinserver.ru:25938<span class="iconify" id="copy-check" data-icon="feather:copy" data-inline="false"></span></a>
            </div> 
            <div class="link-block">
                <a href="https://discord.gg/RsezkYNRNb" id="Discord"><span class="iconify" data-icon="bi:discord" data-inline="false"></span></a>
@@ -73,5 +75,31 @@
       }, 500);
     }
     </script>
+
+    <script>
+    /* Copy IP link */
+    function CopyText() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy text in text field */
+  document.execCommand("copy");
+  CopiedNotify();
+}
+function CopiedNotify() {
+    let notifyblock = document.getElementById("copy-check");
+    notifyblock.style.display = 'block';
+    var TimetoClose;
+    TimetoClose = window.setTimeout(CloseNotify, 1500); /* 1.5s to start CloseNotify() */
+}
+function CloseNotify() {
+    let notifyblock = document.getElementById("copy-check");
+    notifyblock.style.display = 'none';
+}
+</script>
 </body>
 </html>
