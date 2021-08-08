@@ -135,7 +135,7 @@
 }
 
 footer {
-	opacity: 0%;
+	opacity: 100%;
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,9 +148,7 @@ footer {
     transition: 0.3s;
 }
 
-footer:hover {
-	opacity: 100%;
-}
+
 
 footer a {
 	color: var(--link-color);
